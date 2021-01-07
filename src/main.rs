@@ -1,12 +1,15 @@
 fn main() {
-  let x = 45; 
-  /*
-  i32 is default value 32 bit integer
-  let x: i64 = 45; change to 64 bit integer
-  u64 is for positive 64 bit value
-  f32, f64 for the float
-  bool is the boolean variable
-  */
+  let mut x = 45; 
+  
+  if x == 30 {
+    println!("it value is 30");
+  }
+  else if x > 45 {
+    println!("its value is greater that 45");
+  }
+  else {
+    println!("it value is not 30");
+  }
 
   println!("The value of x is {}", x);
   
