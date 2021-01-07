@@ -1,19 +1,17 @@
 fn main() {
-  let mut x = 45; 
+  let mut x = 0; 
   
-  if x == 30 {
-    println!("it value is 30");
-  }
-  else if x > 45 {
-    println!("its value is greater that 45");
-  }
-  else {
-    println!("it value is not 30");
-  }
+  loop {
+    x += 1;
 
-  println!("The value of x is {}", x);
-  
-  x = 60;
+    if x == 7 {
+      continue;
+    }
 
-  println!("The value of x is {}", x);
+    if x > 10 {
+      break;
+    }
+
+    println!("value of x is {}", x);
+  }
 }
